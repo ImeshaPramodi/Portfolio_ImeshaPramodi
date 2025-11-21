@@ -313,11 +313,19 @@
     <div class="glass-overlay">
       <h2 class="heading">Contact <span>Me</span></h2>
       <form action="https://formsubmit.co/imeshaprathnayaka2001@gmail.com" method="POST">
-      <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="accent-btn">
-      </form>
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <!-- Optional: Disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Optional: Redirect to a thank-you page -->
+  <input type="hidden" name="_next" value="https://YOUR_USERNAME.github.io/REPO_NAME/thankyou.html">
+
+  <input type="submit" value="Send Message" class="accent-btn">
+</form>
+
       <div class="social-media-icons profile-fade" style="margin-top: 34px;">
         <a href="https://www.linkedin.com/in/imesha-rathnayaka-147280296/"><i class='bx bxl-linkedin'></i></a>
         <a href="https://www.behance.net/imeshapramdi"><i class='bx bxl-behance'></i></a>
