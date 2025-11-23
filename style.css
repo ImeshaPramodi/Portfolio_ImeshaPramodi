@@ -656,35 +656,134 @@ body {
 }
 
 @media (max-width: 600px) {
-  .glass-overlay {
-    border-radius: 13px;
-    padding: 10px 0 !important;
-    min-width: unset;
-    margin: 2px auto;
-  }
-  
-  .glassy-photo {
-    width: 145px;
-    height: 145px;
-  }
-  
   .header {
-    padding: 11px 3vw;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+  .logo {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  .navbar a {
+    width: 100%;
+    margin: 4px 0;
+    padding: 14px 0;
+    font-size: 1.15em;
+    text-align: left;
+  }
   .theme-toggle {
-    right: 20px;
-    width: 42px;
-    height: 42px;
+    right: 12px;
+    top: 10px;
+    transform: none;
   }
-  
-  .theme-toggle i {
-    font-size: 18px;
+  .glass-overlay,
+  .glass-overlay.profile-hero {
+    min-width: unset;
+    max-width: 100vw;
+    width: 97vw;
+    padding: 6vw 2vw 6vw 2vw !important;
+    min-height: unset;
+    box-sizing: border-box;
   }
-  
+  .profile-hero {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 14px;
+  }
+  .profile-text-column, .profile-photo-column {
+    width: 100%;
+    flex: unset !important;
+  }
+  .profile-photo-frame {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 18px;
+  }
+  .profile-photo-frame img {
+    border-width: 2px;
+  }
+  .gradient-name {
+    font-size: 1.65em !important;
+    word-break: break-all;
+  }
+  .profile-bio {
+    font-size: 1em;
+    margin: 6px 0 12px 0;
+  }
+  .heading {
+    font-size: 2em;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .home-content h1, .hero-main-name {
+    font-size: 2.3em;
+  }
+  .btn-box, .accent-btn, .portfolio-layer a {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.07em;
+    padding: 13px 10px;
+  }
+  .profile-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .skills-container {
+    flex-direction: column !important;
+    gap: 13px;
+    padding: 0 2vw;
+  }
+  .skill-box {
+    min-width: unset;
+    max-width: unset;
+  }
   .portfolio-container {
     grid-template-columns: 1fr;
-    gap: 17px;
+    gap: 14px;
+    padding: 0 2vw;
+  }
+  .portfolio-box img {
+    min-height: 120px;
+    height: 120px;
+  }
+  .portfolio-layer {
+    padding: 14px 8px;
+  }
+  .category-header {
+    padding: 14px 8px;
+    font-size: 1em;
+  }
+  footer {
+    padding: 14px;
+    font-size: 0.98em;
+    border-radius: 0 0 7px 7px;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .glass-overlay,
+  .glass-overlay.profile-hero {
+    padding: 3vw 1vw;
+  }
+  .heading {
+    font-size: 1.3em;
+  }
+  .profile-photo-frame {
+    width: 90px;
+    height: 90px;
+  }
+  .gradient-name {
+    font-size: 1.02em !important;
+  }
+  .portfolio-box img {
+    height: 74px;
+    min-height: 74px;
   }
 }
 
