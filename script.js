@@ -66,6 +66,7 @@ function initCVDownload() {
 document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
   initCVDownload();
+  initExperienceTilt();
 });
 
 ScrollReveal({
@@ -76,6 +77,26 @@ ScrollReveal({
 });
 ScrollReveal().reveal('.home-content, .heading', { origin: "top" });
 ScrollReveal().reveal('.home-sci, .skills-container, .portfolio-container, .contact form', { origin: "bottom" });
+ScrollReveal().reveal('.experience-subtitle', { origin: "top", delay: 280 });
+ScrollReveal().reveal('.timeline-rail', { origin: "left", distance: "40px", delay: 320 });
+ScrollReveal().reveal('.experience-card', { origin: "right", distance: "50px", delay: 380, duration: 1800 });
+ScrollReveal().reveal('.exp-tag', { origin: "bottom", interval: 80, delay: 520, distance: "30px" });
+
+function initExperienceTilt() {
+  const card = document.querySelector('.experience-card');
+  if (!card || window.matchMedia('(max-width: 768px)').matches) return;
+
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `translateY(-8px) scale(1.01) perspective(900px) rotateX(${y * -4}deg) rotateY(${x * 4}deg)`;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+}
 
 const progressBars = document.querySelectorAll('.progress');
 
