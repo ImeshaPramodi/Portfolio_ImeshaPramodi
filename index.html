@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio - Imesha Pramodi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header">
-    <a href="#" class="logo"></a>
+    <a href="#home" class="logo">IMESHA<span>PR</span></a>
     <nav class="navbar">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -18,33 +21,47 @@
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a href="#contact" class="nav-cta">
+      <span class="nav-cta-icon"><i class='bx bx-right-arrow-alt'></i></span>
+      Let's Talk
+    </a>
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
       <i class='bx bx-sun' id="theme-icon"></i>
     </button>
   </header>
 
   <section class="home" id="home">
-    <div class="profile-background-shapes">
-      <div class="profile-shape profile-shape1"></div>
-      <div class="profile-shape profile-shape2"></div>
-      <div class="profile-shape profile-shape3"></div>
-    </div>
-    <div class="glass-overlay profile-hero">
-      <div class="profile-text-column">
-        <h3 class="profile-fade">Hello, I'm</h3>
-        <h1 class="profile-fade"><span class="gradient-name">IMESHA PRAMODI</span></h1>
-        <div class="profile-fade profile-title"><h3>I'm a <span class="text accent-span"></span></h3></div>
-        <div class="profile-fade profile-bio">Turning ideas into delightful interfaces.
-          <p>I'm a passionate UI/UX designer and frontend developer dedicated to crafting intuitive, visually engaging, and user-centered digital experiences that seamlessly blend creativity, functionality, and modern design aesthetics.</p>
-        </div>
-        <div class="profile-fade profile-buttons">
-          <a href="cv.pdf" download="Imesha_Pramodi_CV.pdf" class="accent-btn">Download CV</a>
-          <a href="#contact" class="accent-btn alt-btn">Contact Me</a>
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="hero-role hero-fade">
+          <span class="hero-role-mark"></span>
+          UI &amp; UX Designer
+        </p>
+        <h1 class="hero-headline hero-fade">
+          <span class="hero-headline-bright">Design</span>
+          <span class="hero-headline-muted">that turns ideas into experiences</span>
+        </h1>
+        <p class="hero-lead hero-fade">
+          Crafting intuitive, visually engaging interfaces where creativity meets functionality.
+        </p>
+        <div class="hero-actions hero-fade">
+          <a href="cv.pdf" download="Imesha_Pramodi_CV.pdf" class="hero-cv">
+            <i class='bx bx-download'></i> Download CV
+          </a>
         </div>
       </div>
-      <div class="profile-photo-column profile-fade">
-        <div class="profile-photo-frame">
-          <img src="profile.png" alt="Imesha Pramodi">
+
+      <div class="hero-visual hero-fade">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <p class="hero-name" aria-hidden="true">Imesha Pramodi</p>
+        <div class="hero-portrait-wrap">
+          <div class="hero-portrait">
+            <img src="profile.png" alt="Imesha Pramodi">
+          </div>
+          <a href="#contact" class="hero-hire">
+            <span>Hire Me</span>
+            <span>Now</span>
+          </a>
         </div>
       </div>
     </div>
@@ -393,7 +410,7 @@
       </form>
 
 
-      <div class="social-media-icons profile-fade" style="margin-top: 34px;">
+      <div class="social-media-icons" style="margin-top: 34px;">
         <a href="https://www.linkedin.com/in/imesha-rathnayaka-147280296/"><i class='bx bxl-linkedin'></i></a>
         <a href="https://www.behance.net/imeshapramdi"><i class='bx bxl-behance'></i></a>
         <a href="https://github.com/ImeshaPramodi"><i class='bx bxl-github'></i></a>

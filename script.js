@@ -3,6 +3,7 @@ const roles = ["UI/UX Designer", "Frontend Developer"];
 let i = 0, j = 0, currentRole = "", deleting = false;
 
 function typeEffect() {
+  if (!text) return;
   if (!deleting && j <= roles[i].length) {
     currentRole = roles[i].substring(0, j++);
     text.textContent = currentRole;
